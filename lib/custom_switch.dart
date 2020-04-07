@@ -1,6 +1,7 @@
 library custom_switch;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class CustomSwitch extends StatefulWidget {
   final bool value;
@@ -67,6 +68,7 @@ class _CustomSwitchState extends State<CustomSwitch>
                     child: Text(
                       'On',
                       style: TextStyle(
+                        decoration: TextDecoration.none,
                           color: widget.activeColor,
                           fontWeight: FontWeight.w900,
                           fontSize: 16.0),
@@ -88,6 +90,7 @@ class _CustomSwitchState extends State<CustomSwitch>
                     child: Text(
                       'Off',
                       style: TextStyle(
+                          decoration: TextDecoration.none,
                           color: Colors.grey,
                           fontWeight: FontWeight.w900,
                           fontSize: 16.0),
