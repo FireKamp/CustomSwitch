@@ -59,41 +59,27 @@ class _CustomSwitchState extends State<CustomSwitch>
               padding: const EdgeInsets.only(
                   top: 4.0, bottom: 4.0, right: 4.0, left: 4.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   _circleAnimation.value == Alignment.centerRight
                       ? Padding(
-                          padding: const EdgeInsets.only(left: 4.0, right: 4.0),
-                          child: Text(
-                            '',
-                            style: TextStyle(
-                                color: Colors.white70,
-                                fontWeight: FontWeight.w900,
-                                fontSize: 16.0),
-                          ),
+                          padding: const EdgeInsets.only(left: 0.0, right: 0.0),
                         )
-                      : Container(),
+                      : Container(width: 20.0,),
                   Align(
                     alignment: _circleAnimation.value,
                     child: Container(
-                      width: 25.0,
-                      height: 25.0,
+                      width: 22.0,
+                      height: 22.0,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle, color: Colors.white),
                     ),
                   ),
                   _circleAnimation.value == Alignment.centerLeft
                       ? Padding(
-                          padding: const EdgeInsets.only(left: 4.0, right: 5.0),
-                          child: Text(
-                            '',
-                            style: TextStyle(
-                                color: Colors.white70,
-                                fontWeight: FontWeight.w900,
-                                fontSize: 16.0),
-                          ),
+                          padding: const EdgeInsets.only(left: 0.0, right: 0.0),
                         )
-                      : Container(),
+                      : Container(width: 20.0,),
                 ],
               ),
             ),
